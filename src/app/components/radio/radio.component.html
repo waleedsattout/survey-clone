@@ -1,0 +1,30 @@
+<ng-container *ngIf="data != undefined">
+  @for (item of data; track $index) {
+  <input
+    type="radio"
+    value="{{item}}"
+    name="{{name}}"
+    id="{{name+time+$index}}"
+    [checked]="value == item"
+    (change)="emit($event)"
+  />
+  <label class="{{content != undefined? 'top':''}}" for="{{name+time+$index}}"
+    >{{item}}
+    <p *ngIf="content" [innerHtml]="content"></p>
+  </label>
+  }
+</ng-container>
+<ng-container *ngIf="data == undefined">
+  <input
+    type="radio"
+    value="{{value}}"
+    name="{{name}}"
+    id="{{name+time}}"
+    (change)="emit($event)"
+    [checked]="checked"
+  />
+  <label class="{{content != undefined? 'top':''}}" for="{{name+time}}"
+    >{{label}}
+    <p *ngIf="content" [innerHtml]="content"></p>
+  </label>
+</ng-container>

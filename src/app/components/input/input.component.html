@@ -1,0 +1,64 @@
+<!-- <div class="spinner"></div> -->
+
+<ng-container [ngSwitch]="type">
+  <ng-container *ngSwitchCase="'dropdown'" #dropdown>
+    <input type="text" name="{{name}}" #dropdownInput style="display: none;" />
+    <ng-container *ngIf="dataType == 'cars'">
+      <div
+        #container
+        class="container"
+        attr.name="{{name}}"
+        attr.value="{{data[value==-1?0:value].make}}"
+        (click)="show($event)"
+      >
+        <div class="value">
+          @if(value != -1){ {{data[value==-1?0:value].make}} } @else if(selectedCar != -1) { {{data[selectedCar].make}} } @else {
+          {{data[0].make}} }
+        </div>
+        <div class="dropdown">
+          <div
+            *ngFor="let i of data; let index = index"
+            (click)="select($event)"
+            id="{{index}}"
+          >
+            <img src="{{i.image}}" alt="" />
+            {{i.make}}
+          </div>
+        </div>
+        <span #arrow class="down"></span>
+      </div>
+    </ng-container>
+    <ng-container *ngIf="dataType != 'cars'">
+      <div
+        #container
+        class="container"
+        attr.name="{{name}}"
+        (click)="show($event)"
+      >
+        <div class="value">
+          @if(value != -1){ {{data[value??0]}} } @else if(selectedIndex != -1) {
+          {{data[selectedIndex]}} } @else { {{data[0]}} }
+        </div>
+        <div class="dropdown">
+          <div
+            *ngFor="let i of data; let index = index"
+            (click)="select($event)"
+            id="{{index}}"
+          >
+            {{i}}
+          </div>
+        </div>
+        <span #arrow class="down"></span>
+      </div>
+    </ng-container>
+  </ng-container>
+  <ng-container *ngSwitchDefault>
+    <input
+      type="text"
+      name="{{name}}"
+      value="{{value}}"
+      (change)="emit($event)"
+      placeholder="{{placeholder}}"
+    />
+  </ng-container>
+</ng-container>
