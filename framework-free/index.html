@@ -1,0 +1,623 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="heading">
+      <div class="logo">
+        <img
+          src="https://d1knh3b6uo8q16.cloudfront.net/consumer-rates/auto/assets/sflogo.png"
+          alt="logo"
+        />
+      </div>
+      <div class="call">
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAMAAAC6CgRnAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAi5QTFRFAAAAsbGxmpqasrKyV1dXEBAQExMTHh4eNTU1fn5+ubm5j4+PGxsbbm5uOzs7Li4utra2e3t7FRUVKysrqqqqNzY0IiEfIyIgISAeZ2ZkTk5ODw8PKSkpPT09hISEOjo4FBQSpKSiXl1bHRwaLi0rMTAuQUA+oKCgjY2NXV1dFxcXISEfgoKAVlZUHR0boaGfJSQiLCspLy4sMzIwIB8dlJORYWFfFhYUU1NROTk3LS0rlZWVLSwqFxYUVFNRXl5eIiIiioqKkpKQGhoYTU1LHx8daWlnhYWFHBsZKCclrKuppqamcXFxUlJSICAgJSUlqqqo///9oqKgEREPeXl3hISCGxsZHh0bMC8tMjEvNDMxDg0Lf358RkZGGBgWb29tGRkXJCQicHBwq6urKSgmOTg2srGvRkZEMTEvJSUjfX17ZmZkLy8vr66sg4OBZGRiNDQyT05MJiUjl5aUYWFhOTk5HR0dm5ubnJuZKiknm5qYgYGBISEhCgoKi4uLKyooRURCrq6uSUlJQkJCTU1NiYiGGxoYaWhmODc1hYSCk5KQGBcVg4ODdHNxKioqNzc3GhoaJiYmWFhYnJycdnZ2Ly4qHBsXPDs3oqGdp6aiREM/GxoWHx4cOzo4cXBufX19GBgYKCcjMzIuKiklISAcJSQgJCMfLSwoNTQylJSUuLe1TEtJFRQSamlnNjUzJCMhioiJUU9QMC4vGBYXGRgWSUhGm5mag4KAfn17sK+tNkJFmwAAALp0Uk5TACF3Hv//////3gSf/////w/p//88////////////yP//Wf//////Yaf////X//9k//////+Y//////+J//////+ynP/////D//8/Sf////9C/2H/+M/////////m////////OP//KP///+n//zTT/////43///9yef9+0///rv//Lf///8H////PnP/M////////b/z///9sWf//////4v///////////40S//////+5//////951+kwZ2LiPQAAAbZJREFUeJxjYEACjEzMDLgACysbOwcnLlkubhYedl4kAU4+fgEkrqCQsAiMLSomLiEJZklJy8jKAWl5BUWIlJKyiqq4GoStrqGppa3DwKCrpw/mG4gbGhmbmMKNNDO3YGCwtAIxrZVVVQxtbO1AbHsHKUcGBidnFwYGVzcg391DxVjVU1XFC8j29vH18w8IDAoOYQgNA/K5wyNUbCKjomOgRsbG6TPEJzAwJCYxMCSbGKmkqCinpsHsS89gYMjMYsjOAbKNDCKNDCNzEf5zzmPIL2AI0gIyC02iDIuKkfxeUsrA5M/AUFbOwFChrFJpUoUkV13DIFLLwCBUB2SnikXWNyDJNTYxMDQzMLSoA9mtbZGeHu04Ar+wrcOmrROHpEpRvZE4E3a5rm6byKKyOginB02y18TTqM8vCcTsnzBx0mQUySk8wlOnTps+Y+as2Sr1YnPmzkOWnL9g4cJFi5csXbZctdJwRaVHCrLkSkODCFUbI5UVlapGnio2USjGrlpta2CkqlKpmmIYqbpmLZqLWtdJiK9fEalqUxkeiemZDRs3bd6yvq1oaxqmHBBs2z5vx04IEwAkPmMOVJWvUAAAAABJRU5ErkJggg=="
+          alt="call"
+        />
+        <span>phone Need help? Talk to an agent 855-581-3316 </span>
+      </div>
+    </div>
+
+    <div class="hero">
+      <img
+        src="data:image/png;base64,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"
+        alt="car icon"
+        class="car"
+      />
+      <p id="text"></p>
+    </div>
+    <div class="tabs" id="tabs">
+      <div class="tab active" data-tab="Vehicles">
+        <img
+          src="data:image/png;base64,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"
+          alt="check"
+        />
+        Vehicles
+      </div>
+      <div class="tab wait" data-tab="Drivers">
+        <img
+          src="data:image/png;base64,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"
+          alt="check"
+        />
+        Drivers
+      </div>
+      <div class="tab wait" data-tab="Details">
+        <img
+          src="data:image/png;base64,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"
+          alt="check"
+        />
+        Final Details
+      </div>
+    </div>
+    <div class="progress-bar">
+      <div class="progress-bar-fill" style="width: 0%;"></div>
+    </div>
+    <form id="form" onsubmit="return send(event);">
+      <div class="form-container">
+        <div id="vehicles" class="form-section vehicles">
+          <div
+            style="display: flex; align-items: center; justify-content: center;"
+          >
+            <span id="check-mark-1" class="hidden check-mark fadeIn"></span>
+            <p>Let's get started, what car do you drive?</p>
+          </div>
+          <!-- Step 1: Dropdown for car years -->
+          <div id="yearDropdownContainer" class="container fadeIn" name="year">
+            <div class="value" id="yearValue"></div>
+            <div class="dropdown" id="yearDropdown"></div>
+            <span id="yearArrow" class="down"></span>
+          </div>
+
+          <!-- Step 2: Dropdown for cars -->
+          <div
+            id="carDropdownContainer"
+            class="container fadeIn hidden"
+            name="cars"
+          >
+            <div class="value" id="carValue"></div>
+            <div class="dropdown" id="carDropdown"></div>
+            <span id="carArrow" class="down"></span>
+          </div>
+
+          <!-- Step 3: Dropdown for car engines -->
+          <div
+            id="engineDropdownContainer"
+            class="container hidden"
+            name="engine"
+          >
+            <div class="value" id="engineValue"></div>
+            <div class="dropdown" id="engineDropdown"></div>
+            <span id="engineArrow" class="down"></span>
+          </div>
+
+          <!-- Step 4: Radio buttons for usage -->
+          <div id="usage-container" class="fadeIn hidden">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <span id="check-mark-2" class="hidden check-mark fadeIn"></span>
+              <p>What do you use your Dodge for?</p>
+            </div>
+            <div id="usage" class="miles"></div>
+          </div>
+
+          <div id="miles-container" class="fadeIn hidden">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <span id="check-mark-2" class="hidden check-mark fadeIn"></span>
+              <p>How many miles per day do you drive?</p>
+            </div>
+            <h5>
+              Most drivers average 30 per day
+            </h5>
+            <div id="miles" class="miles"></div>
+          </div>
+
+          <div id="chevr-container" class="fadeIn hidden">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <span id="check-mark-2" class="hidden check-mark fadeIn"></span>
+              <p>Do you own your Chevrolet C5500?</p>
+            </div>
+            <h5>
+              Drivers who lease or finance may need more coverage
+            </h5>
+            <div id="chevr" class="miles"></div>
+          </div>
+
+          <div id="liab-container" class="fadeIn hidden">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <span id="check-mark-2" class="hidden check-mark fadeIn"></span>
+              <p>Would You Like Full Coverage or Liability Only?</p>
+            </div>
+            <h5>
+              Liability covers damage you cause other drivers or their property.
+              Full coverage applies to damage to your vehicle.
+            </h5>
+            <div id="liab" class="miles"></div>
+          </div>
+
+          <div id="saving-container" class="fadeIn hidden">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <span id="check-mark-2" class="hidden check-mark fadeIn"></span>
+              <p>Want to add a second vehicle?</p>
+            </div>
+            <h5>
+              You can save up to 25% by having multiple vehicles on the same
+              policy.
+            </h5>
+            <div id="saving" class="miles"></div>
+          </div>
+
+          <button id="continueButton-1" class="btn hidden">Continue</button>
+        </div>
+
+        <!-- Driver Section -->
+        <div id="driver" class="form-section drivers" style="display: none;">
+          <!-- Step 10 -->
+          <div id="step-10">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <span id="check-mark-12" class="hidden check-mark fadeIn"></span>
+              <p>Let's get started, what car do you drive?</p>
+            </div>
+            <h5>
+              The better we know you, the more accurate quotes we can provide
+            </h5>
+            <!-- First Name Input -->
+            <div id="firstname-container">
+              <input
+                type="text"
+                id="firstname"
+                name="firstname"
+                placeholder="First Name"
+              />
+            </div>
+            <!-- Last Name Input -->
+            <div id="lastname-container" class="hidden fadeIn">
+              <input
+                type="text"
+                id="lastname"
+                name="lastname"
+                placeholder="Last Name"
+              />
+            </div>
+          </div>
+
+          <!-- Step 12 -->
+          <div id="gender-container" class="hidden fadeIn">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <span id="check-mark-13" class="hidden check-mark fadeIn"></span>
+              <p>What is your gender?</p>
+            </div>
+            <div id="gender" class="miles"></div>
+          </div>
+
+          <!-- Step 13 -->
+          <div id="married-container" class="hidden fadeIn">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <span id="check-mark-14" class="hidden check-mark fadeIn"></span>
+              <p>Are you married?</p>
+            </div>
+            <div id="married" class="miles"></div>
+          </div>
+
+          <div id="education-container" class="hidden fadeIn">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <span id="check-mark-14" class="hidden check-mark fadeIn"></span>
+              <p>
+                What is your education level?
+              </p>
+            </div>
+            <div id="education" class="miles"></div>
+          </div>
+
+          <div id="occupation-container" class="hidden fadeIn">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <span id="check-mark-1" class="hidden check-mark fadeIn"></span>
+              <p>
+                What is your occupation?
+              </p>
+            </div>
+            <!-- Step 1: Dropdown for car years -->
+            <div
+              id="occupationDropdownContainer"
+              class="container fadeIn"
+              name="occupation"
+            >
+              <div class="value" id="occupationValue"></div>
+              <div class="dropdown" id="occupationDropdown"></div>
+              <span id="occupationArrow" class="down"></span>
+            </div>
+          </div>
+
+          <div id="credit-container" class="hidden fadeIn">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <span id="check-mark-14" class="hidden check-mark fadeIn"></span>
+              <p>
+                What is your credit score?
+              </p>
+            </div>
+            <div id="credit" class="miles"></div>
+          </div>
+
+          <div id="license-container" class="hidden fadeIn">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <span id="check-mark-14" class="hidden check-mark fadeIn"></span>
+              <p>
+                What is the status of your driver's license?
+              </p>
+            </div>
+            <div id="license" class="miles"></div>
+          </div>
+
+          <div id="sr-22-container" class="hidden fadeIn">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <span id="check-mark-14" class="hidden check-mark fadeIn"></span>
+              <p>
+                Do you require SR-22?
+              </p>
+            </div>
+            <h5>
+              SR-22 is a certificate issued by the state that is sometimes
+              required for drivers that have a DUI or multiple incidents.
+            </h5>
+            <div id="sr-22" class="miles"></div>
+          </div>
+
+          <div id="incidents-container" class="hidden fadeIn">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <span id="check-mark-14" class="hidden check-mark fadeIn"></span>
+              <p>
+                Any incidents in the last 3 years?
+              </p>
+            </div>
+            <h5>
+              Such as tickets, accidents, claims, DUI, or license suspension
+            </h5>
+            <div id="incidents" class="miles"></div>
+          </div>
+          <div id="drive-container" class="hidden fadeIn">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <span id="check-mark-14" class="hidden check-mark fadeIn"></span>
+              <p>
+                Want to add a second driver?
+              </p>
+            </div>
+            <h5>
+              You can save up to 25% by having multiple drivers on the same
+              policy
+            </h5>
+            <div id="drive" class="miles"></div>
+          </div>
+
+          <button id="continueButton-2" class="btn hidden">Continue</button>
+        </div>
+
+        <div id="details" class="form-section details" style="display: none;">
+          <div id="insurance-container" class="fadeIn">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <span id="check-mark-13" class="hidden check-mark fadeIn"></span>
+              <p>
+                Do you currently have car insurance?
+              </p>
+            </div>
+            <div id="insurance" class="miles"></div>
+          </div>
+
+          <div id="coverage-container" class="hidden fadeIn">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <span id="check-mark-13" class="hidden check-mark fadeIn"></span>
+              <p>
+                How much coverage do you need?
+              </p>
+            </div>
+
+            <h5>
+              Most drivers select Standard, You can change it later if you want.
+            </h5>
+
+            <div class="miles">
+              <div>
+                <label class="top">
+                  <input
+                    onchange="__ = 25;checkMarks[17].classList.remove('hidden');updateDetailsForm()"
+                    type="radio"
+                    value="Minimum"
+                    name="coverage"
+                  />
+                  State Minimum ★
+                  <p>
+                    Bodily Injury Minimum <br />
+                    Property Damage Minimum
+                  </p>
+                </label>
+              </div>
+              <div>
+                <label class="top">
+                  <input
+                    onchange="__ = 25;checkMarks[17].classList.remove('hidden');updateDetailsForm()"
+                    type="radio"
+                    value="Basic"
+                    name="coverage"
+                  />
+                  Basic ★★
+                  <p>
+                    Bodily Injury $50K / $100K <br />
+                    Property Damage $50K
+                  </p>
+                </label>
+              </div>
+              <div>
+                <label class="top">
+                  <input
+                    onchange="__ = 25;checkMarks[17].classList.remove('hidden');updateDetailsForm()"
+                    type="radio"
+                    value="Standard"
+                    name="coverage"
+                  />
+                  Standard ★★★
+                  <p>
+                    Bodily Injury $100K / $300K <br />
+                    Property Damage $100K
+                  </p>
+                </label>
+              </div>
+              <div>
+                <label class="top">
+                  <input
+                    onchange="__ = 25;checkMarks[17].classList.remove('hidden');updateDetailsForm()"
+                    type="radio"
+                    value="Superior"
+                    name="coverage"
+                  />
+                  Superior ★★★★
+                  <p>
+                    Bodily Injury $250K / $500K <br />
+                    Property Damage $250K
+                  </p>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div id="military-container" class="hidden fadeIn">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <span id="check-mark-13" class="hidden check-mark fadeIn"></span>
+              <p>
+                Have you or anyone in your family served in the military?
+              </p>
+            </div>
+
+            <h5>
+              Some insurance companies offer military discounts
+            </h5>
+            <div id="military" class="miles"></div>
+          </div>
+
+          <div id="rent-container" class="hidden fadeIn">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <span id="check-mark-13" class="hidden check-mark fadeIn"></span>
+              <p>
+                Do you own or rent your home?
+              </p>
+            </div>
+            <h5>
+              Home owners usually need more coverage than renters
+            </h5>
+            <div id="rent" class="miles"></div>
+          </div>
+
+          <div id="homeType-container" class="hidden fadeIn">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <span id="check-mark-13" class="hidden check-mark fadeIn"></span>
+              <p>
+                What type of home do you live in?
+              </p>
+            </div>
+            <div id="homeType" class="miles"></div>
+          </div>
+
+          <div id="last-container" class="hidden fadeIn">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <span id="check-mark-13" class="hidden check-mark fadeIn"></span>
+              <p>
+                Last question Qwe, what is your address?
+              </p>
+            </div>
+            <h5>
+              Insurance rates vary depending on where you live.
+            </h5>
+
+            <div class="miles">
+              <div id="address-container">
+                <input
+                  type="text"
+                  id="address"
+                  name="address"
+                  placeholder="Enter Address"
+                />
+              </div>
+              <div id="unit-container">
+                <input type="text" id="unit" name="unit" placeholder="Unit#" />
+              </div>
+              <div id="city-container">
+                <input type="text" id="city" name="city" placeholder="City" />
+              </div>
+              <div
+                id="unkDropdownContainer"
+                class="container fadeIn hidden"
+                name="unks"
+              >
+                <div class="value" id="unkValue"></div>
+                <div class="dropdown" id="unkDropdown"></div>
+                <span id="unkArrow" class="down"></span>
+              </div>
+              <div id="zip-container">
+                <input type="text" id="zip" name="zip" placeholder="Zip Code" />
+              </div>
+            </div>
+          </div>
+          <div id="sub" class="hidden fadeIn">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <img
+                src="https://d1knh3b6uo8q16.cloudfront.net/consumer-rates/auto/assets/pink_tick.png"
+                alt="tick"
+                style="
+                  display: inline-block;
+                  margin-top: 1px;
+                  margin-right: 2px;
+                "
+              />
+              <p id="final">
+                Quotes for your car Dodge engine are ready!
+              </p>
+            </div>
+            <button id="submit" class="btn" type="submit">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
